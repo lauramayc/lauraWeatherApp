@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>My weather app</title>
 </head>
 <body>
+  
+    <div class="appFrame">
     <h1> Tokyo</h1>
     <form>
-    <input type="search" placeholder="Enter a city.." required /> 
-    <input type="submit" value="search" />
+    <input type="search" placeholder="Enter a city.."  class="searchForm" required /> 
+    <input type="submit" value="search" class="searchButton" />
 </form>
-    <h2> Monday 12:52 , scattered clouds Humidity 66% Wind 3.3km/h </h2>
+<div class="displayitems"> 
+    <div>
+        <h2> Monday 12:52 , scattered clouds<br> Humidity 66% Wind 3.3km/h </h2>
+    </div>
 
-    <h3> 18°C </h3>
+   <div>
+     <h3> 18°C ☀️ </h3>
+</div> </div>
 
 
 
@@ -29,5 +39,6 @@
           >on Netlify</a
         >
       </footer>
+</div>
 </body>
 </html>
