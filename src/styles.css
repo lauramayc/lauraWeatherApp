@@ -33,22 +33,46 @@ h1 {
     color:#aa3f3f; 
 }
 
-h2{  padding-top:15%;
-     left;
+h2{  
+    
      font-size: 20px; 
     font-weight: 100;
    
 } 
 
-h3 { text-align: top;
+.tempFont { 
     font-family: "Josefin Slab", serif;
     font-size: 50px;
-    font-optical-sizing: auto;
+    
     font-weight: 400;
-    font-style: normal;
+  
 
     color:#aa3f3f; 
 }
+
+.emoji { 
+    font-family: "Josefin Slab", serif;
+    font-size: 40px;
+    
+    font-weight: 400;
+
+
+    color:#aa3f3f; 
+}
+
+
+.displayitems { 
+    display:flex; 
+    justify-content:space-between;
+}
+
+.tempNumber { 
+    display:flex; 
+    justify-content:space-between;
+   
+}
+
+
 
 .searchForm { 
     font-size: 20px; 
@@ -62,14 +86,13 @@ h3 { text-align: top;
     box-shadow: none;
     border-color: #e95670;
     border-radius: 5px;
-}
-.displayitems { 
-    display:flex; 
-    justify-content: space-between;
+  
 }
 
+
 footer 
-{text-align: center;}
+{text-align: center;
+}
 
 a {color: #e95670;
     text-decoration: none; }

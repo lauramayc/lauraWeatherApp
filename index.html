@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="dist/sakura.css" />
     <script src="dist/sakura.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>My weather app</title>
 </head>
 
@@ -18,20 +19,24 @@
 
 
     <div class="appFrame">
-
-        <h1 id="city"> Tokyo</h1>
+       
+        <h1 id="city"> </h1>
+       
         <form class="searchForm" id="search-form" >
             <input type="search" placeholder="Enter a city.." class="searchForm" id="search-form-input" required />
             <input type="submit" value="search" class="searchButton"  />
         </form>
         <div class="displayitems">
-            <div>
-                <h2> Monday 12:52 , scattered clouds<br> Humidity 66% Wind 3.3km/h </h2>
-            </div>
-
-            <div>
-                <h3> 18°C ☀️ </h3>
-            </div>
+         <div>
+                <h2> Monday 12:52 , scattered clouds <br> Humidity 66% Wind 3.3km/h </h2>
+            
+</div>
+            <div class="tempNumber">
+                <div class="emoji"> ☀️ </div>
+                <div class="tempFont" id="temp-number"> </div>
+                <div class="tempFont"> °C</div>
+                </div>
+        
         </div>
 
 
