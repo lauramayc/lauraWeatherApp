@@ -7,6 +7,31 @@ setTimeout(() => {
 }, 1000);  
 
 function changeTemp (response) { 
+
+//date 
+let date = new Date(response.data.time * 1000);
+function formatDate(date) {
+    let minutes = date.getMinutes();
+    let hours = date.getHours();
+    let days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    let day = days[date.getDay()];
+  
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
+    }
+  
+    return `${day} ${hours}:${minutes}`;
+}
+
+
     //temperature number
    let tempElement = document.querySelector("#temp-number"); 
  let responseData = response.data.temperature.current;
@@ -20,14 +45,21 @@ cityElement.innerHTML = response.data.city;
 
 //weather description 
 let weatherDetails = document.querySelector("h2");
-let weatherDetailResponse = ` ${response.data.condition.description} <br> Humidity: ${response.data.temperature.humidity} , wind : ${response.data.wind.speed} Km/h` ;
+let weatherDetailResponse = ` ${formatDate(date)} , ${response.data.condition.description} <br> Humidity: ${response.data.temperature.humidity} , wind : ${response.data.wind.speed} Km/h` ;
 weatherDetails.innerHTML = weatherDetailResponse;
 
+//image 
 
-console.log(response.data);
+let emojiElement = document.querySelector("#emoji");
+let emojiChange = ` <img src=" ${response.data.condition.icon_url}" >` 
+emojiElement.innerHTML = emojiChange;
+
 
 
 }
+
+
+
 
 function searchCity(city) { 
     let apiKey = `a6ee8503c8fee7b4f4c3ocbtac96961d`
