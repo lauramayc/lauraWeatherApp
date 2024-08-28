@@ -7,12 +7,26 @@ setTimeout(() => {
 }, 1000);  
 
 function changeTemp (response) { 
-    
+    //temperature number
    let tempElement = document.querySelector("#temp-number"); 
  let responseData = response.data.temperature.current;
    tempElement.innerHTML = ` ${Math.round(responseData)}` ;
+   
+  //city name
    let cityElement = document.querySelector("#city");
 cityElement.innerHTML = response.data.city;
+
+
+
+//weather description 
+let weatherDetails = document.querySelector("h2");
+let weatherDetailResponse = ` ${response.data.condition.description} <br> Humidity: ${response.data.temperature.humidity} , wind : ${response.data.wind.speed} Km/h` ;
+weatherDetails.innerHTML = weatherDetailResponse;
+
+
+console.log(response.data);
+
+
 }
 
 function searchCity(city) { 
