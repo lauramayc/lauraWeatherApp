@@ -1,19 +1,27 @@
 
  body {
+
+    background: repeating-linear-gradient(
+  90deg,
+  rgb(100, 43, 70) ,
+  rgb(100, 43, 70), 30px,
+  rgb(100, 43, 70) 30px,
+  rgb(100, 43, 70) 60px)
   
-    background-color: #c65d7c;
-   
+    
   }
+   
+  
 
 
     
 .appFrame {
     
     font-family:  Helvetica, Arial, sans-serif;
-    background-color: #f5a9a9;
+    background-color:rgba(206, 149, 178, 0.9);
  max-width: 700px;
-    padding:3%; 
-    margin: 5% auto;
+    padding:2%; 
+    margin: 2% auto;
   
 border: 0px;
 border-style: solid;
@@ -27,7 +35,7 @@ h1 {
     font-family: "Josefin Slab", serif;
     font-size: 50px;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 
     color:#aa3f3f; 
@@ -36,7 +44,7 @@ h1 {
 h2{  
     
      font-size: 20px; 
-    font-weight: 100;
+    font-weight: 500;
    
 } 
 
@@ -48,6 +56,7 @@ h2{
 .tempFont { 
     font-family: "Josefin Slab", serif;
     font-size: 50px;
+    font-weight: 500;
     
     font-weight: 400;
   
@@ -92,12 +101,35 @@ h2{
 }
 
 
-footer 
-{text-align: center;
+
+.weekly {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+.weeklyDay {text-align: center;}
+
+.weeklyIcon {text-align: center;
+    object-fit: scale-down; 
+;}
+
+.weeklyTemp {text-align: center;}
+
+.weeklyDay 
+{ 
 }
 
-a {color: #e95670;
-    text-decoration: none; }
+footer 
+{text-align: center;
+    padding-top: 30px;
+}
+
+a {color:  rgb(100, 43, 70);
+    text-decoration: none; 
+font-weight: 600;}
+
+    b {color:#aa3f3f; }
 
     .sakura {
         pointer-events: none;
