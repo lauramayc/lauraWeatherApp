@@ -76,14 +76,6 @@ h2{
 }
 
 
-.displayitems { 
-    display:flex; 
-    justify-content:space-between;
-}
-
-
-
-
 
 .searchForm { 
     font-size: 20px; 
@@ -92,14 +84,19 @@ h2{
 
 .searchButton { 
    
-    background-color:#e95670; 
-    font-size: 20px;
+    background-color: rgb(100, 43, 70); 
+    color:cornsilk;
+    font-size: 21px;
     box-shadow: none;
-    border-color: #e95670;
-    border-radius: 5px;
+ border-radius: 4px;
+ border-color: rgb(100, 43, 70);
+ border-width:0;
   
 }
-
+.displayitems { 
+    display:flex; 
+    justify-content: space-between;
+}
 
 
 .weekly {
